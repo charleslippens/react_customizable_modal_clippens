@@ -1,7 +1,7 @@
 import React from "react";
 import "../styling/modal.css";
 
-function modal(element) {
+function Modal(element) {
 	return (
 		<div className="Theme">
 			<div className="Message">
@@ -13,4 +13,4 @@ function modal(element) {
 		</div>
 	);
 }
-export default modal;
+export default Modal;
