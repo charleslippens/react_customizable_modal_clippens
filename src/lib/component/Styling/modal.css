@@ -23,5 +23,17 @@
 	color: black;
 	font-size: 1.3rem;
 	font-weight: bold;
-	border-style: outset;
+	border-style: inset;
+}
+
+.Background {
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+	position: -webkit-sticky;
+	position: sticky;
+	bottom: 0;
+	left: 0;
+	background-color: "rgba(146, 146, 96, 1)";
+	padding-bottom: 20rem;
 }

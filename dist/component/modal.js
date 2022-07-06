@@ -15,11 +15,13 @@ function Modal(element) {
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "Theme"
   }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "Background"
+  }, /*#__PURE__*/_react.default.createElement("div", {
     className: "Message"
   }, /*#__PURE__*/_react.default.createElement("p", null, element.text), /*#__PURE__*/_react.default.createElement("button", {
     className: "Button",
     onClick: element.close
-  }, "X")));
+  }, "X"))));
 }
 
 var _default = Modal;
