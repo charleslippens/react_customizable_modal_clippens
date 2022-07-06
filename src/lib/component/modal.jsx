@@ -1,5 +1,5 @@
 import React from "react";
-import "../styling/modal.css";
+import "./Styling/modal.css";
 
 function Modal(element) {
 	return (
