@@ -34,6 +34,6 @@
 	position: sticky;
 	bottom: 0;
 	left: 0;
-	background-color: "rgba(146, 146, 96, 1)";
+	background-color: rgba(146, 146, 96, 1);
 	padding-bottom: 20rem;
 }
