@@ -3,10 +3,10 @@ import "./Styling/modal.css";
 
 function Modal(element) {
 	return (
-		<div className="Background">
-			<div className="Message">
+		<div className="modal-background">
+			<div className="modal">
 				<p>{element.text}</p>
-				<button className="Button" onClick={element.close}>
+				<button className="close-modal" onClick={element.close}>
 					X
 				</button>
 			</div>

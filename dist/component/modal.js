@@ -13,11 +13,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function Modal(element) {
   return /*#__PURE__*/_react.default.createElement("div", {
-    className: "Background"
+    className: "modal-background"
   }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "Message"
+    className: "modal"
   }, /*#__PURE__*/_react.default.createElement("p", null, element.text), /*#__PURE__*/_react.default.createElement("button", {
-    className: "Button",
+    className: "close-modal",
     onClick: element.close
   }, "X")));
 }

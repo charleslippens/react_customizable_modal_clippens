@@ -1,36 +1,51 @@
-.Button {
-	width: 2rem;
-	height: 2rem;
-	border-radius: 1rem;
-	margin-top: 0.5rem;
-	font-size: 1.5rem;
-	font-weight: bold;
-	background-color: #d5db99;
-	border: 0.5rem;
+.modal {
+	box-sizing: border-box;
+	display: inline-block;
+	z-index: 2;
+	position: relative;
+	width: 90%;
+	max-width: 500px;
+	padding: 15px 30px;
+	border-radius: 0.8rem;
+	background: #d5db99;
+	box-shadow: 0 0 10px #000;
+	text-align: left;
+	vertical-align: middle;
 }
-
-.Message {
-	width: 15rem;
-	display: flex;
-	justify-content: space-between;
-	margin: auto;
-	position: -webkit-sticky;
-	position: sticky;
-	top: 30%;
-	background-color: #879d2c;
-	border: 1rem;
-	border-radius: 2rem;
-	color: black;
-	font-size: 1.3rem;
-	font-weight: bold;
-	border-style: inset;
+.modal.close-modal {
+	display: block;
+	position: absolute;
+	top: -12.5px;
+	right: -12.5px;
+	width: 30px;
+	height: 30px;
+	border: none;
+	background-color: transparent;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	text-indent: -9999px;
+	cursor: pointer;
 }
-
-.Background {
-	width: 100%;
-	margin: 0;
-	position: -webkit-sticky;
-	position: sticky;
+.modal-background {
+	box-sizing: border-box;
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	right: 0;
 	bottom: 0;
 	left: 0;
+	width: 100vw;
+	height: 100vh;
+	padding: 20px;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.75);
+	text-align: center;
+}
+.modal-background::before {
+	display: inline-block;
+	height: 100%;
+	margin-right: -0.05em;
+	vertical-align: middle;
+	content: "";
 }
