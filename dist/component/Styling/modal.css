@@ -14,7 +14,7 @@
 	border-style: inset;
 	border: 0.3rem;
 }
-.close-modal {
+.modal.close-modal {
 	display: block;
 	position: absolute;
 	top: -12.5px;
