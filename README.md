@@ -62,3 +62,66 @@ function App() {
 
 export default App;
 ```
+
+```css
+// global modal parameters
+.modal {
+	width: 80%;
+	max-width: 500px;
+	padding: 15px 30px;
+	border-radius: 0.5rem; 
+	background: #d5db99; // modal background color
+	box-shadow: 0 0 10px #000;
+	text-align: left;
+	vertical-align: middle;
+	box-sizing: border-box;
+	display: inline-block;
+	z-index: 2;
+	position: relative;
+}
+// modal close modal icon parameters
+.modal .close-modal {
+	background-image: url(test); // close modal icon in base64 to load faster
+	display: block;
+	position: absolute;
+	top: -16.5px;
+	right: -16.5px;
+	width: 50px;
+	height: 50px;
+	border: none;
+	background-color: transparent;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+// bacground behind modal parameters
+.modal-background {
+	background-color: rgba(5, 6, 7, 8.76);
+  right: 0;
+	bottom: 0;
+	left: 0;
+	width: 150vw;
+	height: 150vh;
+	padding: 30px;
+	overflow: auto;
+	text-align: center;
+	font-weight: bold;
+	box-sizing: border-box;
+	z-index: 1;
+	position: fixed;
+	top: 0;
+
+}
+// before background behind modal parameters
+.modal-background::before {
+	display: inline-block;
+  margin-right: 0.05em;
+	vertical-align: middle;
+	content: "";
+	height: 100%;
+
+}
+}
+```
