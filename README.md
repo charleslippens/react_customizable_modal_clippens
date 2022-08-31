@@ -21,9 +21,44 @@ Import modal component into the file
 import { Modal } from "react_customizable_modal_boilerplate_clippens" 
 ```
 
-## NpmJS link:
+## NpmJS package link:
 
 ```
 https://www.npmjs.com/package/react_customizable_modal_boilerplate_clippens
 ```
+## Example for using in a react project:
 
+```js
+import "./ModaleStyling.css";
+import { Modal } from "react_customizable_modal_boilerplate_clippens" 
+import { useState } from "react";
+
+function App() {
+  // Open and close modale
+  const [openModale, setOpenModale] = useState(false);
+  const onOpenModale = () => setOpenModale(true);
+  const onCloseModale = () => setOpenModale(false);
+  const Submit = (event) => {
+    event.preventDefault();
+    onOpenModale();
+  };
+  return (
+    <div className="ReactApp">
+      <form onSubmit={Submit}>
+        <button type="submit" className="submit">
+          Click here to open Modale
+        </button>
+      </form>
+
+      {openModale && (
+        <Modal
+          close={onCloseModale}
+          text="Write your text here"
+        />
+      )}
+    </div>
+  );
+}
+
+export default App;
+```
