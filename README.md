@@ -17,5 +17,13 @@ npm i react_customizable_modal_boilerplate_clippens
 
 Import modal component into the file
 
+```
 import { Modal } from "react_customizable_modal_boilerplate_clippens" 
+```
+
+## Npm link:
+
+```
+https://www.npmjs.com/package/react_customizable_modal_boilerplate_clippens
+```
 
