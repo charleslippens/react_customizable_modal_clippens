@@ -2,7 +2,7 @@
 
 ## Context
 
-Modal component for React, keep default colors or choose ones.
+Modal component for React, keep theme default colors or choose ones as you like
 
 ## Intall Steps
 
