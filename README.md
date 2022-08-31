@@ -123,5 +123,4 @@ export default App;
 	height: 100%;
 
 }
-}
 ```
