@@ -1,4 +1,4 @@
-# A modal ReactJS boilerplate component and customizable for colors!
+# A modal ReactJS boilerplate component and customizable for theme and colors!
 
 ## Context
 
@@ -8,7 +8,10 @@ Modal component for React, keep default colors or choose ones.
 
 You can install this component with npm or yarn:
 
+```
 npm i react_customizable_modal_boilerplate_clippens
+```
+
 
 ## In your React project
 
