@@ -64,7 +64,9 @@ export default App;
 ```
 
 ```css
+
 // global modal parameters
+
 .modal {
 	width: 80%;
 	max-width: 500px;
@@ -80,6 +82,7 @@ export default App;
 	position: relative;
 }
 // modal close modal icon parameters
+
 .modal .close-modal {
 	background-image: url(test); // close modal icon in base64 to load faster
 	display: block;
@@ -96,10 +99,12 @@ export default App;
 	text-indent: -9999px;
 	cursor: pointer;
 }
+
 // bacground behind modal parameters
+
 .modal-background {
 	background-color: rgba(5, 6, 7, 8.76);
-  right: 0;
+  	right: 0;
 	bottom: 0;
 	left: 0;
 	width: 150vw;
@@ -114,10 +119,12 @@ export default App;
 	top: 0;
 
 }
+
 // before background behind modal parameters
+
 .modal-background::before {
 	display: inline-block;
-  margin-right: 0.05em;
+ 	margin-right: 0.05em;
 	vertical-align: middle;
 	content: "";
 	height: 100%;
