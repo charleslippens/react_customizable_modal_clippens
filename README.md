@@ -12,13 +12,12 @@ You can install this component with npm or yarn:
 npm i react_customizable_modal_boilerplate_clippens
 ```
 
-
 ## In your React project
 
 Import modal component into the file
 
 ```
-import { Modal } from "react_customizable_modal_boilerplate_clippens" 
+import { Modal } from "react_customizable_modal_boilerplate_clippens"
 ```
 
 ## NpmJS package link:
@@ -26,44 +25,48 @@ import { Modal } from "react_customizable_modal_boilerplate_clippens"
 ```
 https://www.npmjs.com/package/react_customizable_modal_boilerplate_clippens
 ```
+
 ## Example for using in a react project:
 
 **ReactApp.js**
 
 ```js
 import "./ModaleStyling.css";
-import { Modal } from "react_customizable_modal_boilerplate_clippens" 
+import { Modal } from "react_customizable_modal_boilerplate_clippens";
 import { useState } from "react";
 
 function App() {
-  // Open and close modale
-  const [openModale, setOpenModale] = useState(false);
-  const onOpenModale = () => setOpenModale(true);
-  const onCloseModale = () => setOpenModale(false);
-  const Submit = (event) => {
-    event.preventDefault();
-    onOpenModale();
-  };
-  return (
-    <div className="ReactApp">
-      <form onSubmit={Submit}>
-        <button type="submit" className="submit">
-          Click here to open Modale
-        </button>
-      </form>
+	// Open and close modale
+	const [openModale, setOpenModale] = useState(false);
+	const onOpenModale = () => setOpenModale(true);
+	const onCloseModale = () => setOpenModale(false);
+	const Submit = (event) => {
+		event.preventDefault();
+		onOpenModale();
+	};
+	return (
+		<div className="ReactApp">
+			<form onSubmit={Submit}>
+				<button type="submit" className="submit">
+					Click here to open Modale
+				</button>
+			</form>
 
-      {openModale && (
-        <Modal
-          close={onCloseModale}
-          text="Write your text here"
-        />
-      )}
-    </div>
-  );
+			{openModale && <Modal close={onCloseModale} text="Write your text here" />}
+		</div>
+	);
 }
 
 export default App;
 ```
+
+## Props list
+
+| Name  | Type    | Required | Description                                   | Default |
+| ----- | ------- | -------- | --------------------------------------------- | ------- |
+| text  | string  | Yes      | The text to be displayed in the modal         |         |
+| close | boolean | Yes      | The close button to be displayed in the modal |         |
+
 **ModaleStyling.css**
 
 ```css
@@ -130,5 +133,4 @@ export default App;
 	content: "";
 	height: 100%;
 }
-
 ```
