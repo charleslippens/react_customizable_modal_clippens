@@ -67,7 +67,7 @@ export default App;
 | text  | string  | Yes      | The text to be displayed in the modal         |         |
 | close | boolean | Yes      | The close button to be displayed in the modal |         |
 
-**ModaleStyling.css**
+**ModaleStyling.css Customize colors, dimensions and all for background modal, close button background modal and modal**
 
 ```css
 /* global modal parameters */
@@ -97,7 +97,7 @@ export default App;
 	width: 50px;
 	height: 50px;
 	border: none;
-	background-color: transparent;
+	background-color: transparent; /*  close button background color */
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -108,7 +108,7 @@ export default App;
 /* bacground behind modal parameters */
 
 .modal-background {
-	background-color: rgba(5, 6, 7, 8.76);
+	background-color: rgba(5, 6, 7, 8.76); /*  modal background color outside */
 	right: 0;
 	bottom: 0;
 	left: 0;
