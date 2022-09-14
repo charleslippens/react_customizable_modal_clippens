@@ -1,6 +1,6 @@
 {
 	"name": "react_customizable_modal_boilerplate_clippens",
-	"version": "0.3.4",
+	"version": "0.3.5",
 	"description": "react customizable modal by clippens",
 	"author": "Clippens",
 	"private": false,
@@ -9,6 +9,14 @@
 	"files": [
 		"dist",
 		"README.md"
+	],
+	"keywords": [
+		"react",
+		"modal",
+		"boilerplate",
+		"custom",
+		"colors",
+		"accessories"
 	],
 	"repository": {
 		"type": "git",
