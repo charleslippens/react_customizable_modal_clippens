@@ -60,7 +60,7 @@ function App() {
 export default App;
 ```
 
-## Props list
+**Props list**
 
 | Name  | Type    | Required | Description                                   | Default |
 | ----- | ------- | -------- | --------------------------------------------- | ------- |
